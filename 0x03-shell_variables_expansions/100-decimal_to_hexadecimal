@@ -1,2 +1,2 @@
 #!/bin/bash
-bc <<<"obase=16;$DECIMAL"
+echo "obase=16;$DECIMAL" | bc | tr -d '\n'
